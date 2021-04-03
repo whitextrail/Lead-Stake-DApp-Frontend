@@ -68,7 +68,7 @@ const HomePage = () => {
     }
     const leadToken = new web3.eth.Contract(
       ERC20.abi,
-      "0x2ed9e96edd11a1ff5163599a66fb6f1c77fa9c66"
+      "0x93d5a19a993d195cfc75acdd736a994428290a59"
     ); //mainnet address for lead token
     const totalSupply = await leadToken.methods.totalSupply().call();
     const balance = await leadToken.methods.balanceOf(accounts[0]).call();
@@ -340,7 +340,7 @@ const HomePage = () => {
 
           <div className="my-2">
             Thanks for your support and feel free to{" "}
-            <a href="https://leadwallet.io/contactus" className="text-blue-500">
+            <a href="#" className="text-blue-500">
               contact us
             </a>
           </div>
